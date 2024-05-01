@@ -1,0 +1,30 @@
+/* :root .dark {
+  --clr-bg: #fff000;
+  --clr-text: #f4ffc1;
+  --clr-bg-card: #d1bf00;
+  --clr-border-card: #44300490;
+  --clr-bg-card-image: #000;
+  --clr-bg-social-links: #ffff00;
+  --clr-text-social-links: inherit;
+  --clr-outline-social-links: #443004;
+  --clr-hover-bg-card: #f2ff0d;
+  --clr-hover-border-card: #44300450;
+  --clr-hover-bg-social-links: #000;
+  --clr-hover-text-social-links: var(--clr-bg);
+  --clr-hover-outline-social-links: inherit;
+} */
+
+:root {
+  --clr-bg: #fdfff8;
+  --clr-text: #f4ffc1;
+  --clr-text-social-links: inherit;
+  --clr-bg-card: #ffffff30;
+  --clr-border-card: #d1bf00;
+  --clr-bg-social-links: #ffff00;
+  --clr-outline-social-links: #443004;
+  --clr-hover-bg-card: #f4ffc130;
+  --clr-hover-border-card: var(--clr-border-card);
+  --clr-hover-bg-social-links: #000;
+  --clr-hover-text-social-links: #fff;
+  --clr-hover-outline-social-: inherit;
+}

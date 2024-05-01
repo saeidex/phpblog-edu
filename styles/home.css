@@ -1,0 +1,90 @@
+.hero {
+  background-color: var(--clr-bg);
+  cursor: none;
+  user-select: none;
+  padding-bottom: 2em;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
+  padding-top: 8em;
+  padding-bottom: 7.7em;
+}
+
+.filter {
+  /* background-color: var(--clr-bg-social-links); */
+  position: relative;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  * {
+    font-size: 1.4rem;
+  }
+
+  .chip {
+    border-radius: 3em;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    span {
+      cursor: pointer;
+      background-color: var(--clr-bg-social-links);
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0.3em 1em;
+      border-radius: 3em;
+      border: 1px solid black;
+
+      &:hover {
+        background-color: #000;
+        color: #fff;
+        outline: 1px solid black;
+        outline-offset: 1px;
+      }
+    }
+
+    input[type="checkbox"]:checked+span {
+      outline: 1px solid black;
+      outline-offset: 1px;
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+
+
+.filter::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0px;
+  background: linear-gradient(90deg,
+      rgba(251, 255, 231, 0) 0%,
+      rgb(233, 213, 0) 25%,
+      rgb(193, 161, 0) 50%,
+      rgb(233, 213, 0) 75%,
+      rgba(251, 255, 231, 0) 100%);
+}
+
+.filter::after {
+  bottom: 0;
+  top: inherit;
+}

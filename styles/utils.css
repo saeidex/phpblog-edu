@@ -1,0 +1,58 @@
+.section {
+  padding: 0 8em;
+  width: 100%;
+}
+
+.bg-pattern {
+  background-size: 2em 2em;
+  /* background-image: linear-gradient(90deg, #00000010 0.1em, transparent 0),
+    linear-gradient(180deg, #00000010 0.1em, transparent 0); */
+  background-image: radial-gradient(circle, #00000030 1px, transparent 0);
+  background-position: center;
+}
+
+.session_alert {
+  height: 1em;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 2em;
+  border-radius: 1px solid red;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+}
+
+.content-in form {
+  padding-top: 2em;
+}
+
+.content-in form label {
+  font-size: 2em;
+  color: #00000090;
+}
+
+.content-in form input,
+.content-in form textarea {
+  width: 100%;
+  border: 1px solid #00000070;
+  background-color: transparent;
+  border-radius: 0.5em;
+  font-size: 2em;
+  padding: 0.5em 1em;
+  margin: 0.4em 0 1em 0;
+}
+
+.content-in form input[type="submit"] {
+  background-color: #ffff00;
+  outline: 1px solid #000;
+  outline-offset: 1px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.content-in form input[type="submit"]:hover {
+  background-color: #000;
+  color: white;
+}

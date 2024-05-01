@@ -1,0 +1,61 @@
+.login-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: var(--clr-bg);
+}
+
+.login-main form {
+  width: 55em;
+  background-color: #ffffff10;
+  backdrop-filter: blur(5px);
+  padding: 4em 3em;
+  border-radius: 1.6em;
+  border: 1px solid #00000030;
+  box-shadow: 0 1em 10em #00000020;
+}
+
+.login-main h2 {
+  font-size: 3.5em;
+  color: rgb(20, 4, 40);
+  margin-bottom: 2rem;
+  padding: 1rem 0 0 1rem;
+}
+
+.login-main input {
+  width: 100%;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  font-size: 2em;
+  border-radius: 1em;
+  border: 1px solid #00000030;
+  font-weight: 100;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.login-main input[type="submit"] {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 1em;
+  background-color: var(--clr-bg-social-links);
+  color: var(--clr-text-social-links);
+  font-weight: bold;
+  transition: 0.3s;
+  font-family: inherit;
+  outline: 1px solid #000;
+  outline-offset: 1px;
+}
+
+.login-main input[type="submit"]:hover {
+  color: var(--clr-hover-text-social-links);
+  background-color: var(--clr-hover-bg-social-links);
+}
+
+.login-main a {
+  font-weight: bold;
+  text-align: center;
+  color: rgb(20, 4, 40);
+}

@@ -1,0 +1,58 @@
+header {
+  height: 8em;
+  background: var(--clr-bg);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+}
+
+header .social-links,
+.admin-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  background-color: var(--clr-bg-social-links);
+  padding: 0.3em 1.2em;
+  border-radius: 3em;
+  outline: 1px solid var(--clr-outline-social-links);
+  outline-offset: 0.2em;
+  cursor: pointer;
+  box-shadow: 0 0.2em 3em -0.6em var(--clr-outline-social-links);
+  transition: all 0.3s;
+}
+
+header .social-links:hover,
+.admin-btn:hover {
+  background-color: #000;
+  color: var(--clr-hover-text-social-links);
+  box-shadow: none;
+}
+
+header .social-links h3,
+.admin-btn h3 {
+  font-size: 1.5em;
+}
+
+header .logo {
+  margin-right: auto;
+  font-size: 2.6em;
+  /* font-family: "IBM Plex Mono", monospace;
+  font-weight: 700; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* color: #00000080; */
+  color: #ff000090;
+  cursor: pointer;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo i {
+  font-size: 1.2em;
+}
+
+header .logo:hover {
+  color: #ff0000;
+}

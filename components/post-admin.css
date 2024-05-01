@@ -1,0 +1,129 @@
+.post-admin {
+  height: 40em;
+  display: flex;
+  gap: 5em;
+  background-color: #f4fad730;
+  padding: 4em;
+  border-radius: 2em;
+  border: 1px solid #d1bf00;
+  background-image: linear-gradient(to right, #00000008 2px, transparent 0),
+    linear-gradient(to top, #00000008 2px, transparent 0);
+  background-size: 4em 4em, 4em 4em;
+  position: relative;
+  box-shadow: 0 0 10em #ffff0005;
+}
+
+.post-admin .img-wrapper {
+  height: 100%;
+  aspect-ratio: 16/9;
+  background-color: #f1f3b5;
+  border-radius: 1em;
+  background-size: 4em 4em, 0.5em 0.5em, 100% 100%;
+  background-image: linear-gradient(45deg, #d1bf00 2px, transparent 0),
+    linear-gradient(135deg, #d1bf00 2px, transparent 0),
+    radial-gradient(circle, transparent 70%, #d1bf0030);
+  border: 1px solid #d1bf0080;
+  box-shadow: 0 0 3em -1em #00000030;
+  z-index: 50;
+  filter: blur(1px);
+}
+
+.post-admin .details {
+  width: 100%;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-admin .details h2 {
+  font-size: 3.8em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: #443004;
+  line-height: 1.4;
+}
+
+.post-admin .details p {
+  font-size: 2em;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  padding-top: 1em;
+  /* color: #a68b02; */
+  color: #44300499;
+  max-width: 70ch;
+  overflow: hidden;
+}
+
+.post-admin .details .actions {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  width: 100%;
+}
+
+.post-admin .details .actions .action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  width: 100%;
+  padding: 1em 2em;
+  color: #443004;
+  background-color: #f9ffdf05;
+  backdrop-filter: blur(5px);
+  border-radius: 4em;
+  cursor: pointer;
+  user-select: none;
+  outline: 1px solid #443004;
+  outline-offset: 1px;
+  transition: all 0.3s;
+  box-shadow: 0 0 3em -1em #00000050;
+  font-size: 1.4em;
+}
+
+.post-admin .details .actions .action-btn:hover {
+  box-shadow: 0 0 3em -1em #44300490;
+  background-color: #000;
+  color: #fff;
+}
+
+.post-admin .details .actions .action-btn i,
+.post-admin .details .actions .action-btn span {
+  font-size: 1.8em;
+}
+.post-admin .details .actions .edit-btn {
+  outline-color: #868600;
+  color: #868600;
+}
+
+.post-admin .details .actions .delete-btn {
+  outline-color: #ff0000;
+  color: #ff0000;
+}
+
+.post-admin .details .actions .edit-btn:hover {
+  background-color: #ffff00;
+  color: #000;
+}
+
+.post-admin .details .actions .delete-btn:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.post-admin .bg-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  background-size: 100% 100%;
+  background-image: linear-gradient(100deg, #f4fad7 50%, transparent);
+  border-radius: inherit;
+}

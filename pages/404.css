@@ -1,0 +1,40 @@
+.four-o-four {
+  background-color: #fcfff3;
+  display: grid;
+  place-content: center;
+  height: 100svh;
+
+  /* fallback */
+  font-size: 10px;
+  margin: 0;
+}
+
+.four-o-four main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.four-o-four main span {
+  font-family: "IBM Plex Mono";
+  font-size: 2em;
+}
+
+.four-o-four main .separator {
+  height: 4em;
+  width: 0.1em;
+  background-color: #00000050;
+}
+
+.go_back {
+  font-size: 2em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.go_back a {
+  text-decoration: underline;
+  color: #ff0000;
+  font-size: 1em;
+}
